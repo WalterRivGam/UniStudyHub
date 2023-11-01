@@ -197,17 +197,20 @@ p {
 
 /* Contenidos */
 
-ol {
+.modulos,
+.lecciones,
+.materiales {
   list-style: none;
 }
 
 .modulo {
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
 }
 
-.modulo:hover {
-  cursor: pointer;
+.modulo ion-icon {
+  margin-right: 1rem;
 }
+
 .lecciones {
   margin-top: 0.75rem;
   margin-left: 2rem;
@@ -222,24 +225,58 @@ ol {
   margin-left: 2rem;
 }
 
-.prueba {
-  margin-top: 0.75rem;
-  margin-left: 2rem;
-}
-
-.material:hover,
-.prueba:hover {
-  background-color: var(--clr-primario);
-  color: var(--clr-fuente-clar);
-}
-
 .seleccionado {
   font-weight: 700;
   font-size: 1.2rem;
 }
 
+.btn-mostrar-ocultar-lecciones:hover {
+  cursor: pointer;
+}
+
+.btn-mostrar-ocultar-materiales:hover {
+  cursor: pointer;
+}
+
+.material ion-icon {
+  cursor: pointer;
+}
+
 /* Auxiliares */
 
-.ocultar {
+.oculto {
   display: none;
+}
+
+.lista {
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Test */
+
+.pregunta {
+  font-size: 24px;
+  margin-top: 1rem;
+  margin-bottom: 0.7rem;
+  font-weight: 700;
+}
+
+input[type='radio'] {
+  margin-bottom: 1rem;
+}
+
+.btn-enviar {
+  font-size: 1.5rem;
+  padding: 0.5rem 3rem;
+  background-color: var(--clr-primario);
+  border: none;
+  border-radius: 0.5rem;
+  color: var(--clr-fuente-clar);
+  margin-top: 1rem;
+}
+
+.btn-enviar:hover {
+  background-color: var(--clr-primario-selec);
+  cursor: pointer;
 }
