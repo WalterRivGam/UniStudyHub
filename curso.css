@@ -13,6 +13,7 @@
   --fuente: 'Roboto', 'sans-serif';
   --clr-rojo: #e03131;
   --clr-verde: #099268;
+  --clr-gris-claro: #dee2e6;
 }
 
 *,
@@ -25,6 +26,7 @@
 
 body {
   font-family: var(--fuente);
+  font-size: 1.2rem;
   background-color: var(--clr-fondo);
   color: var(--clr-fuente-osc);
   min-height: 100vh;
@@ -37,6 +39,10 @@ h3,
 h4 {
   line-height: 1.25;
   margin-bottom: 0.75rem;
+}
+
+h2 {
+  margin-top: 1.7rem;
 }
 
 /* Barra de Navegación  */
@@ -94,7 +100,7 @@ a:hover {
 
 /* Principal */
 
-.contenedor {
+.contenedor2 {
   padding: 7vh 5vw;
   display: grid;
   grid-template-columns: 1fr 3fr;
@@ -279,4 +285,69 @@ input[type='radio'] {
 .btn-enviar:hover {
   background-color: var(--clr-primario-selec);
   cursor: pointer;
+}
+
+/* Progreso */
+
+.contenedor-centrado {
+  margin-top: 3rem;
+  display: grid;
+  place-content: center;
+  grid-template-columns: 0.7fr;
+}
+
+.contenedor-progreso {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 5vw;
+}
+
+.grafico-avance {
+  height: 120px;
+  width: 120px;
+  background-color: var(--clr-fondo);
+  border: var(--clr-primario) solid 3px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: var(--clr-primario);
+}
+
+.porcentaje {
+  font-size: 1.5rem;
+}
+
+.contenedor-grafico-avance {
+  margin-top: 1rem;
+  border: var(--clr-gris-claro) 4px solid;
+  padding: 2.5rem;
+  display: grid;
+  place-content: center;
+  margin-bottom: 2rem;
+}
+
+.contedor-porcentajes-avance {
+  margin-top: 1rem;
+  padding: 2.5rem;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+.tabla-progesos {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabla-progesos tr {
+  height: 4rem;
+  border-bottom: 2px solid var(--clr-gris-claro);
+}
+
+td:nth-child(2) {
+  text-align: right;
+}
+
+td:last-child {
+  text-align: right;
 }
